@@ -10,14 +10,14 @@ app.use(bodyParser.json());
 app.post('/kotak', function(req, res) {
   var parent = "A1"
   var from = 0
-  axios.get("http://post.city.kz/objects/{parent}?from={from}")
+  axios.get("https://api.post.kz/api/objects/" + parent + "?from=" + from)
   .then(response => {
     console.log(response.data)
+    return res.json(response.data)
   })
   .catch(error => {
     console.log(error);
   });
-   return res.json(response.data)
   console.log('lol');
 })
 
