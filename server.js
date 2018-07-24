@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-app.get('/kotak', function(req, res) {
+app.post('/kotak', function(req, res) {
    return res.json({data: "huy"})
   console.log('lol');
 })
