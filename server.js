@@ -7,7 +7,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.get('/kotak', function(req, res) {
-  console.log('lol')
+   return res.json({data: "huy"})
+  console.log('lol');
 })
 
 app.listen(process.env.PORT || 3000);
