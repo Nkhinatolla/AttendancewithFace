@@ -7,5 +7,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.get('/kotak', function(req, res) {
-  res.body('text')
+  console.log('lol')
 })
+
+app.listen(process.env.PORT || 3000);
+console.log('Server is running on Port 3000')
