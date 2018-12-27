@@ -1,0 +1,6 @@
+openpyxl==2.5.4
+cognitive_face==1.4.2
+numpy==1.15.0
+dlib==19.15.0
+opencv-python=3.4.2
+urllib==1.23
